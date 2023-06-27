@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Codificación de Datos</title>
+</head>
+
+<body>
+    <div class="content">
+
+        <h1>Codificación de Datos</h1>
+        <div class="form">
+
+            <label for="bitString">Cadena de bits (11 campos):</label>
+            <input type="text" id="bitString" maxlength="11" />
+
+            <button id="codificar">Codificar</button>
+
+        </div>
+
+        <div class="signals">
+            <div>
+                <h4>NRZ-L</h4>
+                <canvas id="nrzlCanvas"></canvas>
+            </div>
+            <div>
+                <h4>NRZ-I</h4>
+                <canvas id="nrziCanvas"></canvas>
+            </div>
+            <div>
+                <h4>Bipolar AMI</h4>
+                <canvas id="bipolarAmiCanvas"></canvas>
+            </div>
+            <div>
+                <h4>Pesudoternario</h4>
+                <canvas id="pseudoternarioCanvas"></canvas>
+            </div>
+            <div>
+                <h4>Manchester</h4>
+                <canvas id="manchesterCanvas"></canvas>
+            </div>
+            <div>
+                <h4>Manchester diferencial</h4>
+                <canvas id="manchesterDifferentialCanvas"></canvas>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
